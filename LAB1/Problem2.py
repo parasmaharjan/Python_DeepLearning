@@ -1,3 +1,17 @@
+'''
+    Date: Feb 1, 2018
+    Author: Paras Maharjan
+    Class: Pyhton and Deep Learning
+    Lab Assignment: 1
+    Problem: 2
+
+    Write a Python function that accepts a sentence of words from user and display the following:
+    a)	Middle word
+    b)	Longest word in the sentence
+    c)	Reverse all the words in sentence
+
+'''
+
 def main():
     print("Program started...")
     str = input("Enter any string: ")
