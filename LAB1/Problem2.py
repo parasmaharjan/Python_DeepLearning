@@ -14,6 +14,8 @@
 
 def main():
     print("Program started...")
+    # Displays the information about the program
+    print('Program to display middle word, longest word in sentence and reverse all the words in sentence\n\r')
     str = input("Enter any string: ")
     task(str)
 

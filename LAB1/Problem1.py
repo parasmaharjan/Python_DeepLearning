@@ -52,18 +52,35 @@ def validate(un, pw):
 
     # Check if password is equal to username
     if un is pw:
+        status = 0
         print('Username and password cannot be same')
 
-    #check if
+    # Check if presence of at least one lower case alphabet
     if len(set(string.ascii_lowercase).intersection(pw)) < 1:
+        status = 0
         print("Password need at least one lowercase alphabet a-z")
-    if len(set(string.ascii_uppercase).intersection(pw)) < 1:
-        print("Password need at least one uppercase alphabet A-Z")
-    if len(set(string.digits).intersection(pw)) < 1:
-        print("Password must contain at least one digit 0-9")
-    if not ((len(set(string.punctuation[0]).intersection(pw)) > 0) or (len(set(string.punctuation[3]).intersection(pw)) > 0) or (len(set(string.punctuation[9]).intersection(pw)) > 0) or (len(set(string.punctuation[21]).intersection(pw)) > 0)):
-        print("Password must contain at least one special character [ !$@* ]")
 
+    # Check if presence of at least one upper case alphabet
+    if len(set(string.ascii_uppercase).intersection(pw)) < 1:
+        status = 0
+        print("Password need at least one uppercase alphabet A-Z")
+
+    # Check if presence of at least one digit
+    if len(set(string.digits).intersection(pw)) < 1:
+        status = 0
+        print("Password must contain at least one digit 0-9")
+
+    # Check if presence of at least one special character [!@$*]
+    if not ((len(set(string.punctuation[0]).intersection(pw)) > 0) or\
+            (len(set(string.punctuation[3]).intersection(pw)) > 0) or\
+            (len(set(string.punctuation[9]).intersection(pw)) > 0) or\
+            (len(set(string.punctuation[21]).intersection(pw)) > 0)):
+        status = 0
+        print("Password must contain at least one special character [ !$@* ]")
+    if status is 1:
+        print("Password is valid!")
+    else:
+        print("Password is invalid!")
 
 # This function takes the username as input from the user
 def get_username():
