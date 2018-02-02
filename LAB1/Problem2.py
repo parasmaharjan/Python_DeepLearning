@@ -27,6 +27,7 @@ def test():
 def task(str):
     list = str.split()
     #print(list)
+
     # task 1
     length = len(list)
     #print(length)
@@ -51,6 +52,7 @@ def task(str):
     reverse_list = []
     for word in list:
         reverse_list.append(word[::-1])
+    # Join the reversed word to form a sentence
     print(' '.join(word for word in reverse_list))
 
 if __name__ == "__main__":
