@@ -1,0 +1,26 @@
+Set has discrete non repeated elements = unique data
+B = {a,b,a} = {a,b}
+In set order doesn't mater
+Sets are immutable (See the ppt)
+Python set:
+len function - len(set)
+add- my_set.add('element')
+remove-my_set.remove('element')
+
+Set do not support indexing
+my_set[0] - ERROR
+if "sth" in my_set:
+    #do other thing
+
+union of set >> a_set | b_set
+intersection >> a_set & b_set
+difference >> a_set - b_set
+symetric difference >> a_set ^ b_set
+
+Dictionary
+variable = {} ----> by default it is dictionary
+my_dic = {[(1,'a')]}
+#vvi - dictionary are mutable
+
+
+

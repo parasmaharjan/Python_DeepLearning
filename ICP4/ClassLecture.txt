@@ -1,0 +1,83 @@
+OOP and numpy
+
+class - wraping data(variable) and function(method)
+
+data can be global and local
+
+self and __init__
+self is related to reference to the object or itself
+if you want to access the data variable of that object, we use self
+
+constructor - for initialization
+created as soon as the class gets created
+__init__(self)
+
+Encapsulation - binding the data and method together
+
+Everything in python is object
+
+Garbage collector - python we don't need to delete instances
+
+object(instances)
+
+Data attribute(global attr) and class attribute(local attr)
+self.__class__ = className
+
+# VVI for exam - one question sure
+Inheritance
+class DerivedClassName(BaseClassName):
+    ;statement
+
+class DerivedClassName(BaseClassName1, BaseClassName2, ...):
+    ;statement
+
+#VVI - left to right - solves the ambiguity problem in python
+
+Built-In Method #we inheritate these class, we override the method
+__init__
+__doc__
+__repr__ - representation
+__cmp__ - compare to obj - try to check the reference of the variable
+           varible
+           __ | __
+         name    reference(memory location)
+__len__
+__copy__
+
+attribute
+__class__
+
+Private, Protected and Public
+
+name - Public
+_name - Protected
+__name - Private
+
+
+Numpy
+np.arrange(10)
+np.linspace(0,1,5)
+np.zeros((2,2)) - zero initialize
+np.ones((2,2))
+np.empty((2,2)) - uninitalize
+np.eye(3)
+np.diag([1,2,3,4]) - multiple diagonal values
+
+indexing and slicing
+
+#VVI
+broadcasting in python - makes the array compatible for addition
+
+array methods - use cheatsheets
+
+
+
+
+
+
+
+
+
+
+
+
