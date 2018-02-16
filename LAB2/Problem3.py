@@ -110,7 +110,7 @@ def display_all_flight():
         print('')
 
 
-def update_passenger_info(old_name, name, contact, currency, payment, status):
+def update_passenger_info(old_name, name, contact, status):
     print("Edit by name....")
     # Search entry by name
     for flt in flight_list:
